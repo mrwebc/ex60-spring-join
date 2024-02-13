@@ -1,0 +1,24 @@
+//수정사항 - ver6_JavaConfig 패키지를 복붙해서 진행
+    
+   1. Bean으로 자동 등록할 클래스에 역할별로 어노테이션 처리
+        @Service
+        @Repository
+        @Component
+       
+        MemberRegisterSerivce -> @Service
+        MemberPwdChangeService -> @Service
+        
+        MemberListService -> @Service("listService")
+        MemberInfoService -> @Service("infoService")6
+        
+        memberDao -> @Repository
+        
+        MemberPrinter -> @Component
+
+    2. JavaConfig 에서 
+        @ComponentScan(basePackages={""}) 등록
+        Bean으로 등록한 코드를 삭제
+    
+    3. MainController에서 
+        MemberRegisterSerivce, MemberPwdChangeService 객체생성 부문 수정
+ 

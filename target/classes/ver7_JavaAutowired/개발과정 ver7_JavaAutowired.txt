@@ -1,0 +1,12 @@
+//수정사항 - ver6_JavaConfig 패키지를 복붙해서 진행
+    
+
+    MemberInfoService 클래스와
+    MemberListService 클래스에서 생성자를 통해 받아오는 dao 구문을 삭제하고
+    세터메소드를 새로 만들어 @Autowired로 dao를 받는 코드를 작성
+    
+    자바설정 클래스 JavaConfig.java 파일에서
+    MemberListService 메소드 코드 수정
+    MemberInfoService 메소드 코드 수정    
+    
+    
